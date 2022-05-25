@@ -1,14 +1,11 @@
-# UFM team Candidate test
-Candidate test
-In folder topo_files, you can find some examples of Infiniband network topology discovery tool output files.
-1.	You should write a Python program topo_parser that parses this file, finds and prints all connections in the network. The utility should be run as following:
-•	python topo_parser –help
-1.	print usage
-•	python topo_parser –f topofile.topo
-1.	parse topofile.topo
-•	python topo_parser –print
-1.	print parsed topology
-2.	Infiniband network can be quite large (hundreds of thousands of network devices), as a result, the topology file can be large as well. Reading and parsing such file can take a while. Please propose an improved topo_parser version that allows the user to print existing topology while topo_parser is processing new topofile.
+1.	You should write a program in Python, or any other programming language of your choice - topo_parser, that parses this file, finds and prints all connections in the network. The utility should be run as following:
+•	topo_parser –h
+  •	print usage and exit
+•	topo_parser –f topofile.topo
+  •	parse topofile.topo
+•	topo_parser –p
+  •	print parsed topology
+2.	Infiniband network can be quite large (hundreds of thousands of network devices), as a result, the topology file can be large as well. Reading and parsing such file can take a while. Please propose an improved topo_parser version that allows the user to print existing topology while topo_parser is processing new topofile. Parsing progress should be reported to the user.
 Infiniband network topology file explanations:
 There are two types of devices – Switch and host.
 Print the devices in order of connectivity:

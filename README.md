@@ -2,8 +2,10 @@
 
 •	topo_parser –h
   •	print usage and exit
+  
 •	topo_parser –f topofile.topo
   •	parse topofile.topo
+  
 •	topo_parser –p
   •	print parsed topology
   
